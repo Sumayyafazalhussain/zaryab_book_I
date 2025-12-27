@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root {
+  --ifm-color-primary: #1c1e21; /* Deep charcoal */
+  --ifm-color-primary-dark: #1a1c1e;
+  --ifm-color-primary-darker: #181a1c;
+  --ifm-color-primary-darkest: #141517;
+  --ifm-color-primary-light: #1e2023;
+  --ifm-color-primary-lighter: #202225;
+  --ifm-color-primary-lightest: #242629;
+  
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+  --ifm-container-width-xl: 1280px;
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ifm-navbar-padding-horizontal: 1.5rem;
+  
+  --ifm-menu-color-active: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ffffff; /* White */
+  --ifm-color-primary-dark: #f2f2f2;
+  --ifm-color-primary-darker: #e6e6e6;
+  --ifm-color-primary-darkest: #cccccc;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+
+  --ifm-background-color: #0d1117; /* GitHub dark */
+  --ifm-font-color-base: #c9d1d9;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+
+  --ifm-navbar-background-color: #161b22;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--ifm-z-index-fixed);
+}
+
+.menu__link--active {
+  font-weight: 700;
+}
+
+.hero {
+  background-color: var(--ifm-background-color);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
